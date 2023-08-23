@@ -1,0 +1,113 @@
+@extends('dashboard.dashboard-inc.app')
+@section('title', 'Create Oauth')
+@section('content')
+
+<main class="cirqi">
+    <div class="cjlpv c2ksj cxrsk c8syf c96ud cn2cr cxct7">
+
+        <!-- Page header -->
+        <div class="c3lv0">
+
+            <!-- Title -->
+            <h1 class="text-slate-800 dark:text-slate-100 font-bold clxpd ctsdk">@yield('title') ✨</h1>
+
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-sm c21iq c3lv0">
+            <div class="flex cxy0l clvq4 cic9p">
+
+
+                <!-- Panel -->
+                <div class="cirqi">
+
+                    <!-- Panel body -->
+                    <div class="c1dwg c4wiw">
+                        <h2 class="text-slate-800 dark:text-slate-100 font-bold ctsdk cpti8">@yield('title')</h2>
+
+                        <!-- Picture -->
+                        <section>
+                            <div class="flex items-center">
+                                {{-- <div class="mr-4">
+                                    <img class="rounded-full cea2a ckssj" src="./images/user-avatar-80.png" width="80" height="80" alt="User upload">
+                                </div> --}}
+                                <span class="c5e6b cdsge c7qs0 cijix">You are on the verge of generating a keypair for third-party access to your account. Please refrain from sharing this key with anyone.</button>
+                            </div>
+                        </section>
+
+                        <!-- Business Profile -->
+                        <section>
+                            <h3 class="text-slate-800 dark:text-slate-100 font-bold cmklr co3zg ca5ph">Business Profile</h3>
+                            <div class="text-sm">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</div>
+                            <div class="ciipl cqkpt c1jvo cj3ez ccic9 coxdy">
+                                <div class="cmd7e">
+                                    <label class="block text-sm cz4nn ca5ph" for="name">Business Name</label>
+                                    <input id="name" class="c04hc c96ud" type="text" value="Acme Inc.">
+                                </div>
+                                <div class="cmd7e">
+                                    <label class="block text-sm cz4nn ca5ph" for="business-id">Business ID</label>
+                                    <input id="business-id" class="c04hc c96ud" type="text" value="Kz4tSEqtUmA">
+                                </div>
+                                <div class="cmd7e">
+                                    <label class="block text-sm cz4nn ca5ph" for="location">Location</label>
+                                    <input id="location" class="c04hc c96ud" type="text" value="London, UK">
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Email -->
+                        <section>
+                            <h3 class="text-slate-800 dark:text-slate-100 font-bold cmklr co3zg ca5ph">Email</h3>
+                            <div class="text-sm">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</div>
+                            <div class="flex flex-wrap coxdy">
+                                <div class="mr-2">
+                                    <label class="czsjw" for="email">Business email</label>
+                                    <input id="email" class="c04hc" type="email" value="admin@acmeinc.com">
+                                </div>
+                                <button class="btn border-slate-200 dark:border-slate-700 text-indigo-500 c18nt czq29 cbnz0">Change</button>
+                            </div>
+                        </section>
+
+                        <!-- Password -->
+                        <section>
+                            <h3 class="text-slate-800 dark:text-slate-100 font-bold cmklr co3zg ca5ph">Password</h3>
+                            <div class="text-sm">You can set a permanent password if you don't want to use temporary login codes.</div>
+                            <div class="coxdy">
+                                <button class="btn border-slate-200 dark:border-slate-700 text-indigo-500 c18nt czq29 cbnz0">Set New Password</button>
+                            </div>
+                        </section>
+
+                        <!-- Smart Sync -->
+                        <section>
+                            <h3 class="text-slate-800 dark:text-slate-100 font-bold cmklr co3zg ca5ph">Smart Sync update for Mac</h3>
+                            <div class="text-sm">With this update, online-only files will no longer appear to take up hard drive space.</div>
+                            <div class="flex items-center coxdy" x-data="{ checked: true }">
+                                <div class="c3mtn">
+                                    <input type="checkbox" id="toggle" class="czsjw" x-model="checked">
+                                    <label class="cbrl7 c6xk7" for="toggle">
+                                        <span class="bg-white cbnz0" aria-hidden="true"></span>
+                                        <span class="czsjw">Enable smart sync</span>
+                                    </label>
+                                </div>
+                                <div class="text-sm camw1 c4cuk czskp c4j6o" x-text="checked ? 'On' : 'Off'"></div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Panel footer -->
+                    <footer>
+                        <div class="flex border-slate-200 dark:border-slate-700 cic9p cannk cmtd2 c0l7b">
+                            <div class="flex cgysv">
+                                <button class="btn dark:bg-slate-800 border-slate-200 dark:border-slate-700 c18nt czq29 cywsn c24n3">Cancel</button>
+                                <button class="btn ml-3 c5e6b cdsge c7qs0">Save Changes</button>
+                            </div>
+                        </div>
+                    </footer>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+@endsection
