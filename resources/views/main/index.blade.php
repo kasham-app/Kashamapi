@@ -783,7 +783,7 @@
                             <div class="single-wealth-secure-box">
                                 <div class="img-box">
                                     <div class="img-box-inner">
-                                        <img src="assets/images/resources/wealth-secure-1.jpg" alt="">
+                                        <img src="{{ asset('mainassets/assets/images/resources/wealth-secure-1.jpg') }}" alt="">
                                     </div>
                                     <div class="inner-title">
                                         <div class="arrow-top"></div>
@@ -803,7 +803,7 @@
                             <div class="single-wealth-secure-box style2">
                                 <div class="img-box">
                                     <div class="img-box-inner">
-                                        <img src="assets/images/resources/wealth-secure-2.jpg" alt="">
+                                        <img src="{{ asset('mainassets/assets/images/resources/wealth-secure-2.jpg') }}" alt="">
                                     </div>
                                     <div class="inner-title">
                                         <div class="arrow-top"></div>
@@ -823,7 +823,7 @@
                             <div class="single-wealth-secure-box style3">
                                 <div class="img-box">
                                     <div class="img-box-inner">
-                                        <img src="assets/images/resources/wealth-secure-3.jpg" alt="">
+                                        <img src="{{ asset('mainassets/assets/images/resources/wealth-secure-3.jpg') }}" alt="">
                                     </div>
                                     <div class="inner-title">
                                         <div class="arrow-top"></div>
@@ -843,7 +843,7 @@
                             <div class="single-wealth-secure-box style4">
                                 <div class="img-box">
                                     <div class="img-box-inner">
-                                        <img src="assets/images/resources/wealth-secure-4.jpg" alt="">
+                                        <img src="a{{ asset('mainassets/ssets/images/resources/wealth-secure-4.jpg') }}" alt="">
                                     </div>
                                     <div class="inner-title">
                                         <div class="arrow-top"></div>
@@ -865,7 +865,7 @@
                             <div class="single-wealth-secure-box">
                                 <div class="img-box">
                                     <div class="img-box-inner">
-                                        <img src="assets/images/resources/wealth-secure-1.jpg" alt="">
+                                        <img src="{{ asset('mainassets/assets/images/resources/wealth-secure-1.jpg') }}" alt="">
                                     </div>
                                     <div class="inner-title">
                                         <div class="arrow-top"></div>
