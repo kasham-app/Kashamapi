@@ -48,6 +48,9 @@ Route::get('/user',[Usercontroller::class,'fetchuser'])->name('user.fetch')->mid
 Route::post('/verify/mailcode',[Usercontroller::class,'verifyEmailCode'])->name('emailcode.verify');
 
 Route::post('/verify/smscode',[Usercontroller::class,'VerifySmsCode'])->name('Verify.SmsCode');
+Route::post('/send/money',[Usercontroller::class,'sendmoney'])->name('user.sendmoney');
+Route::post('/receive/money',[Usercontroller::class,'receivemoney'])->name('user.receivemoney');
+Route::post('/kasham/verify',[Usercontroller::class,'kashamverify'])->name('kasham.verify');
 
 
 //store transaction.

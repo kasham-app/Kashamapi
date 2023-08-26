@@ -9,6 +9,7 @@ use App\Models\UserWallet;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class Usercontroller extends Controller
 {
@@ -285,5 +286,27 @@ class Usercontroller extends Controller
         }
 
         return $transactionId;
+    }
+
+    public function sendmoney(Request $request)
+    {
+        $user = $request->user();
+
+
+    }
+
+    public function kashamverify(Request $request)
+    {
+        $user = $request->user();
+        $validator = Validator::make($request->all(), [
+            'kasham_tag' => 'required_without:phone_number',
+            'phone_number' => 'required_without:kasham_tag',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['message' => 'Phone number or kashamtag is required.'], 400);
+        }
+
+return 200;
     }
 }
