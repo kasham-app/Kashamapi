@@ -166,11 +166,11 @@ class Usercontroller extends Controller
         try {
             $user = $request->user();
 
-            if ($user->is_pro == 0) {
-                $count = 0;
-                $user->api_requests = $count + 1;
-                $user->update();
-            }
+            // if ($user->is_pro == 0) {
+            //     $count = 0;
+            //     $user->api_requests = $count + 1;
+            //     $user->update();
+            // }
 
             $userWithRelationships = $user->load(['transactions', 'userwallet']); // Eager loading relationships
 
